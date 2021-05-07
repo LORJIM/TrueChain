@@ -1,3 +1,8 @@
+## Librerias necesarias
+
+npm install ng2-animate-on-scroll  
+npm install @angular-devkit/build-angular
+
 # TruechainWebsite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
