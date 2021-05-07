@@ -1,0 +1,269 @@
+/* Footer styles */
+
+/* General seciton styles */
+.footer {
+    background: #203260 center no-repeat;
+}
+h3, h4, h5 {
+    margin-top: 0;
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    object-fit: contain;
+}
+i {
+    color: #fff;
+}
+
+/* Footer top styles */
+.footer-top {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.back-to-top {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.back-to-top a {
+    border: 2px #000 solid;
+    background-color: #fff;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    transition-duration: .5s;
+}
+.back-to-top a:hover {
+    color: #fff;
+    background-color: #203260;
+    border-color: #000;
+    transition-duration: .5s;
+}
+.back-to-top i {
+    color: #000;
+}
+.back-to-top a:hover i {
+    color: #fff;
+}
+
+/* Footer Header */
+
+.footer-header {
+    text-align: center;
+}
+
+.footer-header img{
+    width: 250px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-right: 8px;
+    pointer-events: none;
+}
+/* developer styles */
+.developer {
+    text-align: center !important;
+    margin-bottom: 40px;
+}
+.developer h5 {
+    padding-bottom: 10px
+}
+.developer-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.developer-items a {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.developer-items button {
+    border-color: #000;
+    border-width: 2px;
+    width: 115px;
+    height: 80px;
+}
+.developer-items i {
+    margin-bottom: 5px;
+}
+.developer-items button:hover {
+    border-color: #fff;
+    transition-duration: .3s;
+}
+p {
+    font-size: 14px !important;
+    margin-bottom: 0;
+}
+
+
+/* Social media styles */
+.social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.social-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center
+}
+.social-media-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.social-media-row a {
+    margin-right: 5px;
+    margin-left: 5px;
+    border: #000 2px solid;
+    padding: 15px;
+    transition-duration: .5s;
+}
+.social-media-row a:hover {
+    background: #000;
+    color:#fff;
+    border-color: #fff;
+    transition-duration: .3s;
+}
+
+.social-header {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* Tech guide styles */
+.tech-guides {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.tech-guides h5 {
+    padding-bottom: 20px
+}
+.mining-buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+.mining-content {
+    text-align: center !important;
+}
+.mining-buttons a {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.mining-buttons button {
+    border-color: #000;
+    border-width: 2px;
+    width: 80px;
+    height: 80px;
+}
+.mining-buttons button:hover {
+    border-color: #fff;
+    transition-duration: .3s;
+}
+p {
+    font-size: 14px !important;
+    margin-bottom: 0;
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    background-color: #fff;
+    text-align: center;
+}
+.footer-bottom span, .footer-bottom p {
+    color: #000;
+}
+.footer-bottom-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media(max-width: 1199px) {
+    .social-media {
+        margin-bottom: 50px;
+    }
+    .social-header {
+        text-align: center;
+    }
+    .social-media-row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .social-media-row a{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .tech-guides {
+        border-left: none;
+        padding-left: 0;
+    }
+    .tech-guides h4 {
+        margin-bottom: 30px;
+    }
+    .app-content {
+        text-align: center;
+    }
+    .app-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .app-buttons a {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .app-buttons a:first-child {
+        margin-left: 0px;
+    }
+    .mining-content {
+        text-align: center;
+    }
+    .mining-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .mining-buttons a {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .mining-buttons a:first-child {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .footer .developer-items a{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer .developer-items button{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer-bottom-content .row {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .footer-bottom-content .row:last-child div{
+        margin-top: 15px;
+    }
+    .footer-bottom .col-sm-3 {
+        margin-top: 0px !important;
+    }
+}

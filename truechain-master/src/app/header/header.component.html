@@ -1,0 +1,163 @@
+<!--Main header that is fixed to the top of the page-->
+<header class="header-section full-width" id="header">
+  <div class="wrap" [@divState]='state'>
+    <div class="container" id="header-main">
+      <div class="row">
+        <!--Logo section-->
+        <div class="col-xs-2 logo-container">
+          <div class="logo">
+            <a href="{{logoPath}}">
+              <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
+              <img [@logoWhiteState]='state' src="../assets/truechain-logo-white.png">
+              <!-- <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
+              <img [@logoWhiteState]='state' src="../assets/truechain-logo-white.png"> -->
+            </a>
+          </div>
+        </div>
+        <!--Navigation-->
+        <div class="col-xs-10 header-nav hide-on-init" animateOnScroll animationName="animated fadeIn">
+            <div class="navigation">
+              <ul class="nav nav-tabs" *ngIf="english">
+                <li class="main">
+                  <a href="#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>What Are We?</strong></a>
+                </li>
+                <li class="main">
+                  <a href="#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Why TrueChain?</strong></a>
+                </li>
+                <li class="main">
+                  <a href="#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Use Cases</strong></a>
+                </li>
+                <li class="main">
+                  <a href="#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Case Studies</strong></a>
+                </li>
+                <li class="main">
+                  <a href="#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Roadmap</strong></a>
+                </li>
+                <li class="main">
+                  <a href="#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Partners</strong></a>
+                </li>
+                <li>
+                  <a href="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>About Us</strong></a>
+                </li>
+                <li class="lang">
+                  <span><a href="{{englishPath}}"
+                          [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                          (click)="switchToEnglish()"
+                  >EN</a></span>
+                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                  <span><a href="{{chinesePath}}"
+                          [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                          (click)="switchToChinese()"
+                  >中</a></span>
+                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                  <span><a href="{{koreanPath}}"
+                    [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    (click)="switchToKorean()"
+                  >한국어</a></span>
+                </li>
+              </ul>
+              <ul class="nav nav-tabs" *ngIf="chinese">
+                  <li class="main">
+                    <a href="/cn#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>我们是什么?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/cn#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>为什么选择初链</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/cn#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>应用实例</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/cn#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>实例探究</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/cn#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>发展路径</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/cn#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>生态和合作伙伴</strong></a>
+                  </li>
+                  <li>
+                    <a href="/cn/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>关于我们</strong></a>
+                  </li>
+                  <li class="lang">
+                    <span><a href="{{englishPath}}"
+                            [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToEnglish()"
+                    >EN</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{chinesePath}}"
+                            [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToChinese()"
+                    >中</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{koreanPath}}"
+                      [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                      (click)="switchToKorean()"
+                    >한국어</a></span>
+                  </li>
+                </ul>
+                <ul class="nav nav-tabs" *ngIf="korean">
+                  <li class="main">
+                    <a href="/kr#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>우리는 누구 인가요?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>왜 TrueChain을 사용해야 하나요?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>사용 사례</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>연구 사례</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>로드맵</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>파트너 및 투자자</strong></a>
+                  </li>
+                  <li>
+                    <a href="/kr/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>회사 소개</strong></a>
+                  </li>
+                  <li class="lang">
+                    <span><a href="{{englishPath}}"
+                            [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToEnglish()"
+                    >EN</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{chinesePath}}"
+                            [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToChinese()"
+                    >中</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{koreanPath}}"
+                      [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                      (click)="switchToKorean()"
+                    >한국어</a></span>
+                  </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>

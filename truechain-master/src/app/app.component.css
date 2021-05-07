@@ -1,0 +1,12 @@
+app-header-mobile {
+    display: none;
+}
+
+@media(max-width: 991px) {
+    app-header {
+        display: none;
+    }
+    app-header-mobile {
+        display: block;
+    }
+}

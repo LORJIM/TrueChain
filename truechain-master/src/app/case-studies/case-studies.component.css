@@ -1,0 +1,40 @@
+/* Case Studies section CSS */
+
+.case-studies-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:  linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ), url("/assets/system-2660914_1920.jpg") fixed center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    background-position: center !important;
+}
+.title-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title-content p {
+    color: #fff !important;
+}
+.case-study {
+    padding: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.case-study h2 {
+    color: #fff !important;
+}
+.case-study h3 {
+    margin-bottom: 30px;
+    color: #fff !important;
+}
+.case-study p {
+    color: #fff !important;
+}
+
+@media(max-width: 767px) {
+    .case-studies-section {    
+        background-attachment: scroll !important;
+    }
+}

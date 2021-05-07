@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import './assets/animate.css';
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a, label, input, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  color: #000;
+  font-size: 17px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased  !important;
+}
+
+li {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased  !important;
+}
+
+i {
+  color: #000;
+}
+
+
+.btn-primary {
+  background-color: rgba(0, 0, 0 , 0) ;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #000;
+  transition-duration: .5s;
+}
+
+.btn-primary:hover {
+  background-color: #000 ;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #fff;
+  transition-duration: .5s;
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0 , 0) ;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #000;
+  color: #000;
+  transition-duration: .5s;
+}
+
+.btn-secondary:hover {
+  background-color: #203260;
+  color: #fff;
+  border-radius: 0;
+  border-color: #203260;
+  border-width: 2px;
+  transition-duration: .5s;
+}
+
+.background-primary {
+  background-color: #F7F7F7;
+}
+.background-secondary {
+  background-color: rgb(239, 243, 245);
+}
+
+/* Animations */
+
+.animated-delay-1 {
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -o-animation-delay: .1s;
+}
+
+.animated-delay-2 {
+  animation-delay: .2s;
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -o-animation-delay: .2s;
+}
+
+.animated-delay-3 {
+  animation-delay: .3s;
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -o-animation-delay: .3s;
+}
+
+.animated-delay-4 {
+  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+  -moz-animation-delay: .4s;
+  -o-animation-delay: .4s;
+}
+
+.animated-delay-5 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -o-animation-delay: .5s;
+}
+
+.animated-delay-6 {
+  animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -o-animation-delay: .6s;
+}
+
+.animated-delay-7 {
+  animation-delay: .7s;
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay: .7s;
+  -o-animation-delay: .7s;
+}
+
+.hide-on-init {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible !important;
+}
+
+@media(max-width: 780px) {
+  .full-width{
+    margin-right: -100vw;
+  }
+}
